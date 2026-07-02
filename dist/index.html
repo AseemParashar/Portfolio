@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aseem Parashar — Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Ctext x='50' y='68' font-size='60' fill='%2300ff41' text-anchor='middle' font-family='monospace'%3E%3E_%3C/text%3E%3C/svg%3E" />
+  <meta name="description" content="Aseem Parashar — CS student, researcher, and aspiring Product Manager. Portfolio showcasing experience in software development, data analytics, and AI/ML." />
+  <meta property="og:title" content="Aseem Parashar — Portfolio" />
+  <meta property="og:description" content="CS student, researcher, and aspiring Product Manager based in New Delhi." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="grid-bg"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">&gt; AP.exe</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-right" id="navRight">
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#research">research</a></li>
+        <li><a href="#leadership">leadership</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#achievements">achievements</a></li>
+        <li><a href="#interests">interests</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <a href="https://www.linkedin.com/in/aseem-parashar-214181255" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span class="nav-social-label">linkedin</span>
+        </a>
+        <a href="https://github.com/AseemParashar" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span class="nav-social-label">github</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <div class="page">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-prompt">root@portfolio:~$</div>
+    <div class="hero-eyebrow" id="typing-line"><span class="cursor"></span></div>
+    <h1 class="hero-name">
+      Aseem<br>
+      <span class="accent">Parashar_</span>
+    </h1>
+    <p class="hero-tagline">
+      <span class="hl">CS student</span> · <span class="hl">researcher</span> · <span class="hl">aspiring PM</span><br>
+      Exploring Data Analytics, AI/ML & Data Science.<br>
+      Based in New Delhi, India.
+    </p>
+    <div class="hero-cta">
+      <a href="#experience" class="btn-primary">[ view_work() ]</a>
+      <a href="mailto:parasharaseem@gmail.com" class="btn-ghost">[ contact_me() ]</a>
+      <a id="resume-dl" href="#" class="btn-resume" onclick="downloadResume(); return false;">[ download_resume.pdf ]</a>
+    </div>
+    <div class="hero-scroll-hint">scroll_down</div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="fade-in">
+      <div class="section-label">// 01 — about</div>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+    <div class="about-grid fade-in">
+      <div class="about-text">
+        <p>Final-year <span class="hl">B.Sc (Hons.) Computer Science</span> student at Bhaskaracharya College of Applied Sciences, University of Delhi.</p>
+        <p>My experience spans <span class="hl">software development</span> at a fintech startup, <span class="hl">data analysis</span> in health-tech, and <span class="hl">deep learning research</span> presented at a national conference.</p>
+        <p>Actively exploring roles in <span class="hl">Product Management</span>, <span class="hl">Data Analytics</span>, and <span class="hl">AI/ML</span> — domains where my technical grounding and research background can drive real impact.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">2</div>
+          <div class="stat-label">Industry Internships</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1</div>
+          <div class="stat-label">National Conference Paper</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Society Roles Held</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">×2</div>
+          <div class="stat-label">Cricket Champion 🏆</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="fade-in">
+      <div class="section-label">// 02 — education</div>
+      <h2 class="section-title">Academic Background</h2>
+    </div>
+    <div class="exp-list">
+      <div class="exp-card fade-in">
+        <div class="exp-header">
+          <div class="exp-role">B.Sc (Hons.) Computer Science</div>
+          <div class="exp-date">2023 – Present</div>
+        </div>
+        <div class="exp-company">University of Delhi</div>
+        <ul class="exp-bullets">
+          <li>Final-year undergraduate, Bhaskaracharya College of Applied Sciences.</li>
+        </ul>
+      </div>
+      <div class="exp-card fade-in">
+        <div class="exp-header">
+          <div class="exp-role">Class XII (CBSE)</div>
+          <div class="exp-date">2022</div>
+        </div>
+        <div class="exp-company">Modern Convent School, New Delhi</div>
+      </div>
+      <div class="exp-card fade-in">
+        <div class="exp-header">
+          <div class="exp-role">Class X (CBSE)</div>
+          <div class="exp-date">2020</div>
+        </div>
+        <div class="exp-company">Modern Convent School, New Delhi</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="fade-in">
+      <div class="section-label">// 03 — experience</div>
+      <h2 class="section-title">Where I've Worked</h2>
+    </div>
+    <div class="exp-list">
+
+      <div class="exp-card fade-in">
+        <div class="exp-header">
+          <div class="exp-role">Software Development Intern</div>
+          <div class="exp-date">Aug 2024</div>
+        </div>
+        <div class="exp-company">MobiKwik · New Delhi · Fintech</div>
+        <ul class="exp-bullets">
+          <li>Built a PDF-to-HTML conversion tool that improved internal document processing workflows.</li>
+          <li>Collaborated cross-functionally with multiple departments to integrate the tool into existing pipelines.</li>
+          <li>Gained hands-on HTML, CSS, and JavaScript experience in a live enterprise fintech environment.</li>
+          <li>Observed large-scale software deployment practices firsthand.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card fade-in">
+        <div class="exp-header">
+          <div class="exp-role">Data Analyst Intern</div>
+          <div class="exp-date">May – Jul 2024</div>
+        </div>
+        <div class="exp-company">Eykam Wellness · New Delhi · Health-Tech</div>
+        <ul class="exp-bullets">
+          <li>Analyzed health and wellness datasets using Python (NumPy, Pandas, Matplotlib, Seaborn) and Excel.</li>
+          <li>Built automated workflows and formulas to surface actionable insights for business decisions.</li>
+          <li>Presented data findings clearly to non-technical stakeholders in cross-functional settings.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="fade-in">
+      <div class="section-label">// 04 — research</div>
+      <h2 class="section-title">Research & Presentations</h2>
+    </div>
+    <div class="research-card fade-in">
+      <div class="research-tag">NATIONAL CONFERENCE · IMPACT 2026</div>
+      <div class="research-title">Advanced Prediction of PM2.5 Pollution Data Using Deep Learning</div>
+      <div class="research-venue">Co-Author & Conference Presenter · Abstract published in official conference book of proceedings</div>
+      <div class="research-desc">
+        Applied deep learning techniques to environmental time-series data for predictive modeling of PM2.5 air pollution levels.
+        Presented at IMPACT 2026, a national conference on medicinal plant value addition and innovation.
+        Demonstrates interdisciplinary research skills — combining ML with environmental science — and is currently being extended into a full implementation.
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership">
+    <div class="fade-in">
+      <div class="section-label">// 05 — leadership</div>
+      <h2 class="section-title">Positions of Responsibility</h2>
+    </div>
+    <div class="leadership-grid">
+      <div class="lead-card fade-in">
+        <div class="lead-role">Joint Secretary, ECA Committee</div>
+        <div class="lead-org">BCAS · 2024–2025</div>
+        <div class="lead-desc">Managed college-wide events, maintained Minutes of Meetings, secured sponsorships for the annual Srijan festival, and coordinated across all ECA clubs.</div>
+      </div>
+      <div class="lead-card fade-in">
+        <div class="lead-role">Secretary, Darpan (Dramatics Society)</div>
+        <div class="lead-org">BCAS · 2024–2025</div>
+        <div class="lead-desc">Organized society meetings and maintained Minutes of Meetings; coordinated with other DCTC member societies for inter-college workshops and events.</div>
+      </div>
+      <div class="lead-card fade-in">
+        <div class="lead-role">Consultant, CS.net</div>
+        <div class="lead-org">BCAS · 2024–2025</div>
+        <div class="lead-desc">Advised incoming office bearers on operational and strategic matters; helped organize departmental seminars and secured external sponsorships.</div>
+      </div>
+      <div class="lead-card fade-in">
+        <div class="lead-role">Joint Secretary, CS.net (Computer Science Society)</div>
+        <div class="lead-org">BCAS · 2023–2024</div>
+        <div class="lead-desc">Led event management for the Computer Science Department festival; managed the society's official Instagram handle and coordinated Social Media and Tech teams.</div>
+      </div>
+      <div class="lead-card fade-in">
+        <div class="lead-role">Treasurer & PR Head, Darpan (Dramatics Society)</div>
+        <div class="lead-org">BCAS · 2023–2024</div>
+        <div class="lead-desc">Managed all allocated and raised funds for the society, maintaining accurate financial records; liaised with DCTC member societies for workshops and college fests.</div>
+      </div>
+      <div class="lead-card fade-in">
+        <div class="lead-role">Social Media Coordinator, ECA Committee</div>
+        <div class="lead-org">BCAS · 2023–2024</div>
+        <div class="lead-desc">Managed social media presence for the ECA Committee, coordinating content and outreach across college events and activities.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="fade-in">
+      <div class="section-label">// 06 — skills</div>
+      <h2 class="section-title">Technical Toolkit</h2>
+    </div>
+    <div class="skills-grid fade-in">
+      <div class="skill-group">
+        <div class="skill-group-title">Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Web</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Data & ML</div>
+        <div class="skill-tags">
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Matplotlib</span>
+          <span class="skill-tag">Seaborn</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">Predictive Modeling</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MS Excel</span>
+          <span class="skill-tag">MS Office</span>
+          <span class="skill-tag">Google Workspace</span>
+          <span class="skill-tag">Canva</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Human Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">English</span>
+          <span class="skill-tag">Hindi</span>
+          <span class="skill-tag">Spanish (Beginner)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="fade-in">
+      <div class="section-label">// 07 — achievements</div>
+      <h2 class="section-title">Recognition & Wins</h2>
+    </div>
+    <div class="ach-list fade-in">
+      <div class="ach-item"><span class="ach-icon">🏆</span>1st Place – Interdepartmental Cricket Tournament (Spardha 2026, BCAS)</div>
+      <div class="ach-item"><span class="ach-icon">🏆</span>1st Place – Interdepartmental Cricket Tournament (Spardha 2025, BCAS)</div>
+      <div class="ach-item"><span class="ach-icon">🥇</span>1st Position – Anti-Tobacco Play by NTCP, Govt. of NCT of Delhi</div>
+      <div class="ach-item"><span class="ach-icon">🎓</span>Achievement – International Space Science Competition 2020 (National Level)</div>
+      <div class="ach-item"><span class="ach-icon">📋</span>Coordinator – Official CS Department Festival, BCAS 2022–23</div>
+      <div class="ach-item"><span class="ach-icon">🤝</span>Certificate of Appreciation – Sportify Event 22 Volunteer (SAKSHAM)</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- INTERESTS -->
+  <section id="interests">
+    <div class="fade-in">
+      <div class="section-label">// 08 — interests</div>
+      <h2 class="section-title">Beyond Work</h2>
+    </div>
+    <div class="skills-grid fade-in">
+      <div class="skill-group">
+        <div class="skill-group-title">Mind</div>
+        <div class="skill-tags">
+          <span class="skill-tag">History</span>
+          <span class="skill-tag">Current Affairs</span>
+          <span class="skill-tag">Politics</span>
+          <span class="skill-tag">Card Games</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Body</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Cricket</span>
+          <span class="skill-tag">Badminton</span>
+          <span class="skill-tag">Karate (White Belt)</span>
+          <span class="skill-tag">Kickboxing (White Belt)</span>
+          <span class="skill-tag">Yoga</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">Causes</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Animal Welfare</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner fade-in">
+      <div class="section-label" style="text-align:center;">// 09 — contact</div>
+      <h2 class="section-title" style="text-align:center;">Let's Connect</h2>
+      <p>
+        Looking for opportunities in Product Management, Data Analytics, and AI/ML.<br>
+        If you're building something interesting — let's talk.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:parasharaseem@gmail.com" class="contact-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          parasharaseem@gmail.com
+        </a>
+        <button class="contact-link" id="copyEmailBtn" onclick="copyEmail()" style="cursor:pointer; font-family:'JetBrains Mono', monospace;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <span id="copyEmailLabel">copy email</span>
+        </button>
+        <a href="tel:+918882627161" class="contact-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 88826 27161
+        </a>
+        <a href="#" class="contact-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          New Delhi, India
+        </a>
+        <a href="https://www.linkedin.com/in/aseem-parashar-214181255" target="_blank" class="contact-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin/aseem-parashar
+        </a>
+        <a href="https://github.com/AseemParashar" target="_blank" class="contact-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          github/AseemParashar
+        </a>
+      </div>
+      <div style="margin-top:1.5rem;">
+        <a href="#" class="btn-resume" onclick="downloadResume(); return false;" style="display:inline-block;">[ download_resume.pdf ]</a>
+      </div>
+    </div>
+  </section>
+
+  </div><!-- end .page -->
+
+  <footer>
+    <span>// aseem_parashar · 2026 · all_systems_operational</span>
+  </footer>
+
+  
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
